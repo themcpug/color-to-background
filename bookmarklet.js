@@ -1,6 +1,1 @@
-javascript: (function () {
-  let color = prompt('Background Color? Hex or name will do', 'blue');
-  document.body.style.backgroundColor = color;
-  let divElements = document.querySelectorAll('div');
-  for (elements of divElements) {
-	   elements.style.backgroundColor = color;
+javascript:void((function()%7Bvar%20color=prompt(%22Enter%20a%20color%20name%20or%20code:%22),canvas=document.createElement(%22canvas%22),ctx=canvas.getContext(%222d%22);canvas.width=canvas.height=1,ctx.fillStyle=color,ctx.fillRect(0,0,1,1);var%20data=ctx.getImageData(0,0,1,1).data,hex=%22%23%22+((1%3C%3C24)+(data%5B0%5D%3C%3C16)+(data%5B1%5D%3C%3C8)+data%5B2%5D).toString(16).slice(1);document.body.style.backgroundColor=hex%7D)())
